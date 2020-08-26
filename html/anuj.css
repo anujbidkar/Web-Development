@@ -1,9 +1,12 @@
-#sprouts
+body
 {
-    color: purple;
+    background-color:bisque;
 }
-
-.anuj
+h1
 {
+    background-color: powderblue;
     color: red;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
 }
