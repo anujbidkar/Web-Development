@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="new_h1">
+       new_h1 id
+    </h1>
+
+
+    <p id="my_p">
+        my_p id
+    </p>
+
+
+    <h1 class="soham">
+        soham class
+    </h1>
+
+    
+    <button onclick="myFunction()">
+        click here
+    </button>
+
+
+    <script>
+        //    document.getElementsByClassName("soham").innerHTML = "by class name";
+
+        function myFunction()
+        {
+        //    document.getElementById("new_h1").innerHTML = "hello soham";
+        //    document.getElementById("my_p").innerHTML = "anuj";
+
+          // document.getElementsByTagName("h1")[0].innerHTML = "by class name";
+
+          document.querySelectorAll("#my_p")[0].innerHTML = "byQuery"
+           
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+   
+   
+   
+    <label >ENter WEight</label> <br>
+    <input type="number" name="weight" id="weight"> <br>
+   
+    <label >ENter Height</label> <br>
+    <input type="number" name="height" id="height"> <br>
+
+
+    <br>
+    <button onclick="myBMI()">
+        calculate BMI
+    </button>
+
+    <h1>
+    </h1>
+
+    <script>
+        function myBMI()
+        {
+            var w =  Number(document.getElementById("weight").value);
+            var h =  Number(document.getElementById("height").value);
+            
+            var result = bmi(w,h);
+           // alert(result);
+
+           document.querySelectorAll("h1")[0].innerHTML = result;
+           
+        }
+
+        function bmi(w,h)
+        {
+            h = Math.pow(h,2);
+            var bmi = Math.round(w/h);
+
+            return bmi;
+
+        }
+    </script>
+
+</body>
+</html>
